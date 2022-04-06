@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<savings>
+	<step>0</step>
+	<guildsCount>4</guildsCount>
+	<currentGuild>0</currentGuild>
+	<thiefMeetings>0</thiefMeetings>
+	<inventory>
+		<money>100.00</money>
+		
+	</inventory>
+</savings>
