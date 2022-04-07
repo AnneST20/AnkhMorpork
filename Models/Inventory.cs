@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace AnkhMorpork
+﻿namespace AnkhMorpork
 {
     public class Inventory
     {

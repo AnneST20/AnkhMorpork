@@ -83,7 +83,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GuildsDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Inventory.cs" />
+    <Compile Include="Models\Inventory.cs" />
     <Compile Include="Viwes\EndGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,7 +161,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>GuildsDB.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\Savings.xml" />
     <Content Include="Images\Assassin.jpg" />
     <Content Include="Images\Beggar.jpg" />
     <Content Include="Images\Fool.jpg" />

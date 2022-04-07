@@ -1,6 +1,5 @@
 ﻿using AnkhMorpork.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace AnkhMorpork.Controllers
@@ -36,7 +35,7 @@ namespace AnkhMorpork.Controllers
         {
             return $"Here are {beggar.Type} \n" +
                 $"who want {beggar.Fee} AM$ and {beggar.Beer} beer.\n" +
-                $"Will you give them what they wants?";
+                $"Will you give them what they want?";
         }
     }
 }

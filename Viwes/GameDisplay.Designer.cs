@@ -34,6 +34,8 @@
             this.buttonSkip = new System.Windows.Forms.Button();
             this.buttonMove = new System.Windows.Forms.Button();
             this.panelInventory = new System.Windows.Forms.Panel();
+            this.pictureBoxSilver = new System.Windows.Forms.PictureBox();
+            this.labelSilver = new System.Windows.Forms.Label();
             this.pictureBoxBeer = new System.Windows.Forms.PictureBox();
             this.pictureBoxGold = new System.Windows.Forms.PictureBox();
             this.labelBeer = new System.Windows.Forms.Label();
@@ -43,15 +45,13 @@
             this.numericAssassinReward = new System.Windows.Forms.NumericUpDown();
             this.labelStep = new System.Windows.Forms.Label();
             this.labelGuildInfo = new System.Windows.Forms.Label();
-            this.labelSilver = new System.Windows.Forms.Label();
-            this.pictureBoxSilver = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuild)).BeginInit();
             this.panelInventory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSilver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBeer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAssassinReward)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSilver)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxFrame
@@ -116,6 +116,26 @@
             this.panelInventory.Size = new System.Drawing.Size(460, 51);
             this.panelInventory.TabIndex = 5;
             // 
+            // pictureBoxSilver
+            // 
+            this.pictureBoxSilver.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSilver.Image")));
+            this.pictureBoxSilver.Location = new System.Drawing.Point(322, 2);
+            this.pictureBoxSilver.Name = "pictureBoxSilver";
+            this.pictureBoxSilver.Size = new System.Drawing.Size(34, 38);
+            this.pictureBoxSilver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSilver.TabIndex = 12;
+            this.pictureBoxSilver.TabStop = false;
+            // 
+            // labelSilver
+            // 
+            this.labelSilver.AutoSize = true;
+            this.labelSilver.Location = new System.Drawing.Point(280, 4);
+            this.labelSilver.Name = "labelSilver";
+            this.labelSilver.Size = new System.Drawing.Size(63, 44);
+            this.labelSilver.TabIndex = 11;
+            this.labelSilver.Text = "00";
+            this.labelSilver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // pictureBoxBeer
             // 
             this.pictureBoxBeer.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBeer.Image")));
@@ -141,7 +161,7 @@
             this.labelBeer.AutoSize = true;
             this.labelBeer.Location = new System.Drawing.Point(387, 6);
             this.labelBeer.Name = "labelBeer";
-            this.labelBeer.Size = new System.Drawing.Size(33, 36);
+            this.labelBeer.Size = new System.Drawing.Size(41, 44);
             this.labelBeer.TabIndex = 9;
             this.labelBeer.Text = "0";
             // 
@@ -150,7 +170,7 @@
             this.labelGold.AutoSize = true;
             this.labelGold.Location = new System.Drawing.Point(176, 5);
             this.labelGold.Name = "labelGold";
-            this.labelGold.Size = new System.Drawing.Size(61, 36);
+            this.labelGold.Size = new System.Drawing.Size(75, 44);
             this.labelGold.TabIndex = 7;
             this.labelGold.Text = "100";
             this.labelGold.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -160,7 +180,7 @@
             this.labelInventory.AutoSize = true;
             this.labelInventory.Location = new System.Drawing.Point(3, 4);
             this.labelInventory.Name = "labelInventory";
-            this.labelInventory.Size = new System.Drawing.Size(150, 36);
+            this.labelInventory.Size = new System.Drawing.Size(185, 44);
             this.labelInventory.TabIndex = 6;
             this.labelInventory.Text = "Inventory: ";
             // 
@@ -182,7 +202,7 @@
             this.numericAssassinReward.Location = new System.Drawing.Point(492, 569);
             this.numericAssassinReward.Name = "numericAssassinReward";
             this.numericAssassinReward.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericAssassinReward.Size = new System.Drawing.Size(560, 43);
+            this.numericAssassinReward.Size = new System.Drawing.Size(560, 51);
             this.numericAssassinReward.TabIndex = 7;
             this.numericAssassinReward.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericAssassinReward.Visible = false;
@@ -209,33 +229,13 @@
             this.labelGuildInfo.Text = "labelGuildInfo";
             this.labelGuildInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelSilver
-            // 
-            this.labelSilver.AutoSize = true;
-            this.labelSilver.Location = new System.Drawing.Point(280, 4);
-            this.labelSilver.Name = "labelSilver";
-            this.labelSilver.Size = new System.Drawing.Size(51, 36);
-            this.labelSilver.TabIndex = 11;
-            this.labelSilver.Text = "00";
-            this.labelSilver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBoxSilver
-            // 
-            this.pictureBoxSilver.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSilver.Image")));
-            this.pictureBoxSilver.Location = new System.Drawing.Point(322, 2);
-            this.pictureBoxSilver.Name = "pictureBoxSilver";
-            this.pictureBoxSilver.Size = new System.Drawing.Size(34, 38);
-            this.pictureBoxSilver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSilver.TabIndex = 12;
-            this.pictureBoxSilver.TabStop = false;
-            // 
             // GameDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 34F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(26F, 44F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.ClientSize = new System.Drawing.Size(1062, 673);
             this.Controls.Add(this.labelGuildInfo);
             this.Controls.Add(this.labelStep);
             this.Controls.Add(this.numericAssassinReward);
@@ -256,10 +256,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuild)).EndInit();
             this.panelInventory.ResumeLayout(false);
             this.panelInventory.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSilver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBeer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAssassinReward)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSilver)).EndInit();
             this.ResumeLayout(false);
 
         }

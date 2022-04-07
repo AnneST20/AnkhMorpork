@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AnkhMorpork
@@ -23,11 +16,6 @@ namespace AnkhMorpork
             Hide();
             gameDisplay = new GameDisplay();
             gameDisplay.Show();
-        }
-
-        private void buttonContinue_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

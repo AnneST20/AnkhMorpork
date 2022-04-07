@@ -29,68 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartDisplay));
-            this.buttonStart = new System.Windows.Forms.Button();
-            this.groupBoxButtons = new System.Windows.Forms.GroupBox();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonContinue = new System.Windows.Forms.Button();
             this.labelGreeting = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBoxButtons.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonStart
-            // 
-            this.buttonStart.BackColor = System.Drawing.Color.YellowGreen;
-            this.buttonStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonStart.Font = new System.Drawing.Font("Matura MT Script Capitals", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonStart.Location = new System.Drawing.Point(6, 22);
-            this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(426, 82);
-            this.buttonStart.TabIndex = 0;
-            this.buttonStart.Text = "Start new game";
-            this.buttonStart.UseVisualStyleBackColor = false;
-            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
-            // 
-            // groupBoxButtons
-            // 
-            this.groupBoxButtons.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxButtons.Controls.Add(this.buttonExit);
-            this.groupBoxButtons.Controls.Add(this.buttonStart);
-            this.groupBoxButtons.Controls.Add(this.buttonContinue);
-            this.groupBoxButtons.Location = new System.Drawing.Point(312, 250);
-            this.groupBoxButtons.Name = "groupBoxButtons";
-            this.groupBoxButtons.Size = new System.Drawing.Size(438, 249);
-            this.groupBoxButtons.TabIndex = 1;
-            this.groupBoxButtons.TabStop = false;
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonExit.Font = new System.Drawing.Font("Matura MT Script Capitals", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonExit.Location = new System.Drawing.Point(6, 179);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(426, 64);
-            this.buttonExit.TabIndex = 2;
-            this.buttonExit.Text = "Exit";
-            this.buttonExit.UseVisualStyleBackColor = false;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // buttonContinue
-            // 
-            this.buttonContinue.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonContinue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonContinue.Font = new System.Drawing.Font("Matura MT Script Capitals", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonContinue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonContinue.Location = new System.Drawing.Point(6, 107);
-            this.buttonContinue.Name = "buttonContinue";
-            this.buttonContinue.Size = new System.Drawing.Size(426, 69);
-            this.buttonContinue.TabIndex = 1;
-            this.buttonContinue.Text = "Continue";
-            this.buttonContinue.UseVisualStyleBackColor = false;
-            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
             // labelGreeting
             // 
@@ -115,6 +60,44 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Ankh-Morpork";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.buttonExit);
+            this.panel1.Controls.Add(this.buttonStart);
+            this.panel1.Location = new System.Drawing.Point(312, 249);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(438, 174);
+            this.panel1.TabIndex = 4;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonExit.Font = new System.Drawing.Font("Matura MT Script Capitals", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExit.Location = new System.Drawing.Point(6, 102);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(426, 64);
+            this.buttonExit.TabIndex = 3;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // buttonStart
+            // 
+            this.buttonStart.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonStart.Font = new System.Drawing.Font("Matura MT Script Capitals", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonStart.Location = new System.Drawing.Point(6, 14);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(426, 82);
+            this.buttonStart.TabIndex = 1;
+            this.buttonStart.Text = "Start new game";
+            this.buttonStart.UseVisualStyleBackColor = false;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+            // 
             // StartDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(26F, 44F);
@@ -122,9 +105,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelGreeting);
-            this.Controls.Add(this.groupBoxButtons);
             this.Font = new System.Drawing.Font("Matura MT Script Capitals", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.MaximumSize = new System.Drawing.Size(1080, 720);
@@ -132,20 +115,18 @@
             this.Name = "StartDisplay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AnkhMorpork";
-            this.groupBoxButtons.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.GroupBox groupBoxButtons;
-        private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonContinue;
         private System.Windows.Forms.Label labelGreeting;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button buttonStart;
     }
 }
 
