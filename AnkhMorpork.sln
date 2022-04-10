@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkhMorpork", "AnkhMorpork.csproj", "{A3A9E5A5-746D-4653-ADCD-1EAB74873BF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkhMorporkTests", "AnkhMorporkTests\AnkhMorporkTests.csproj", "{D0C97E2E-CC89-4C1C-9134-049AD9E96640}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A3A9E5A5-746D-4653-ADCD-1EAB74873BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3A9E5A5-746D-4653-ADCD-1EAB74873BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3A9E5A5-746D-4653-ADCD-1EAB74873BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C97E2E-CC89-4C1C-9134-049AD9E96640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C97E2E-CC89-4C1C-9134-049AD9E96640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C97E2E-CC89-4C1C-9134-049AD9E96640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C97E2E-CC89-4C1C-9134-049AD9E96640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

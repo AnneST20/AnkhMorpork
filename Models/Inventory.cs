@@ -1,4 +1,4 @@
-﻿namespace AnkhMorpork
+﻿namespace AnkhMorpork.Models
 {
     public class Inventory
     {
