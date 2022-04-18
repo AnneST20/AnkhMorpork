@@ -21,6 +21,11 @@ namespace AnkhMorpork.Controllers
                 "and wants to take 10 AM$.\n" +
                 "Will you give him money?";
         }
+
+        public override string ShowMeetingResult()
+        {
+            return "Thanks Gods you're alive! \n But you spend 10 AM$";
+        }
     }
 }
 

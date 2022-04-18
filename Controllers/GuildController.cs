@@ -15,6 +15,8 @@ namespace AnkhMorpork.Controllers
 
         public abstract bool ApplyGuildRequest();
 
-        public abstract string ShowGuildInfo(); 
+        public abstract string ShowGuildInfo();
+
+        public abstract string ShowMeetingResult();
     }
 }

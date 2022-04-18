@@ -37,5 +37,10 @@ namespace AnkhMorpork.Controllers
                 $"who want {beggar.Fee} AM$ and {beggar.Beer} beer.\n" +
                 $"Will you give them what they want?";
         }
+
+        public override string ShowMeetingResult()
+        {
+            return $"You gave {beggar.Fee} AM$ to {beggar.Type}";
+        }
     }
 }

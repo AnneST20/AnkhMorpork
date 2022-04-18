@@ -45,6 +45,7 @@
             this.numericAssassinReward = new System.Windows.Forms.NumericUpDown();
             this.labelStep = new System.Windows.Forms.Label();
             this.labelGuildInfo = new System.Windows.Forms.Label();
+            this.labelPreviousStep = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuild)).BeginInit();
             this.panelInventory.SuspendLayout();
@@ -95,7 +96,7 @@
             this.buttonMove.Name = "buttonMove";
             this.buttonMove.Size = new System.Drawing.Size(276, 56);
             this.buttonMove.TabIndex = 4;
-            this.buttonMove.Text = "Apply";
+            this.buttonMove.Text = "Yes";
             this.buttonMove.UseVisualStyleBackColor = false;
             this.buttonMove.Click += new System.EventHandler(this.buttonMove_Click);
             // 
@@ -131,7 +132,7 @@
             this.labelSilver.AutoSize = true;
             this.labelSilver.Location = new System.Drawing.Point(280, 4);
             this.labelSilver.Name = "labelSilver";
-            this.labelSilver.Size = new System.Drawing.Size(63, 44);
+            this.labelSilver.Size = new System.Drawing.Size(51, 36);
             this.labelSilver.TabIndex = 11;
             this.labelSilver.Text = "00";
             this.labelSilver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -161,7 +162,7 @@
             this.labelBeer.AutoSize = true;
             this.labelBeer.Location = new System.Drawing.Point(387, 6);
             this.labelBeer.Name = "labelBeer";
-            this.labelBeer.Size = new System.Drawing.Size(41, 44);
+            this.labelBeer.Size = new System.Drawing.Size(33, 36);
             this.labelBeer.TabIndex = 9;
             this.labelBeer.Text = "0";
             // 
@@ -170,7 +171,7 @@
             this.labelGold.AutoSize = true;
             this.labelGold.Location = new System.Drawing.Point(176, 5);
             this.labelGold.Name = "labelGold";
-            this.labelGold.Size = new System.Drawing.Size(75, 44);
+            this.labelGold.Size = new System.Drawing.Size(61, 36);
             this.labelGold.TabIndex = 7;
             this.labelGold.Text = "100";
             this.labelGold.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -180,7 +181,7 @@
             this.labelInventory.AutoSize = true;
             this.labelInventory.Location = new System.Drawing.Point(3, 4);
             this.labelInventory.Name = "labelInventory";
-            this.labelInventory.Size = new System.Drawing.Size(185, 44);
+            this.labelInventory.Size = new System.Drawing.Size(150, 36);
             this.labelInventory.TabIndex = 6;
             this.labelInventory.Text = "Inventory: ";
             // 
@@ -188,7 +189,7 @@
             // 
             this.labelMeetGuild.BackColor = System.Drawing.Color.Transparent;
             this.labelMeetGuild.Font = new System.Drawing.Font("Matura MT Script Capitals", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMeetGuild.Location = new System.Drawing.Point(478, 62);
+            this.labelMeetGuild.Location = new System.Drawing.Point(478, 261);
             this.labelMeetGuild.Name = "labelMeetGuild";
             this.labelMeetGuild.Size = new System.Drawing.Size(574, 50);
             this.labelMeetGuild.TabIndex = 6;
@@ -202,7 +203,7 @@
             this.numericAssassinReward.Location = new System.Drawing.Point(492, 569);
             this.numericAssassinReward.Name = "numericAssassinReward";
             this.numericAssassinReward.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericAssassinReward.Size = new System.Drawing.Size(560, 51);
+            this.numericAssassinReward.Size = new System.Drawing.Size(560, 43);
             this.numericAssassinReward.TabIndex = 7;
             this.numericAssassinReward.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericAssassinReward.Visible = false;
@@ -211,7 +212,7 @@
             // 
             this.labelStep.BackColor = System.Drawing.Color.Transparent;
             this.labelStep.Font = new System.Drawing.Font("Matura MT Script Capitals", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStep.Location = new System.Drawing.Point(478, 12);
+            this.labelStep.Location = new System.Drawing.Point(478, 199);
             this.labelStep.Name = "labelStep";
             this.labelStep.Size = new System.Drawing.Size(574, 50);
             this.labelStep.TabIndex = 8;
@@ -222,20 +223,32 @@
             // 
             this.labelGuildInfo.BackColor = System.Drawing.Color.Transparent;
             this.labelGuildInfo.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.labelGuildInfo.Location = new System.Drawing.Point(481, 123);
+            this.labelGuildInfo.Location = new System.Drawing.Point(481, 339);
             this.labelGuildInfo.Name = "labelGuildInfo";
-            this.labelGuildInfo.Size = new System.Drawing.Size(571, 426);
+            this.labelGuildInfo.Size = new System.Drawing.Size(571, 210);
             this.labelGuildInfo.TabIndex = 9;
             this.labelGuildInfo.Text = "labelGuildInfo";
             this.labelGuildInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelPreviousStep
+            // 
+            this.labelPreviousStep.BackColor = System.Drawing.Color.Transparent;
+            this.labelPreviousStep.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.labelPreviousStep.Location = new System.Drawing.Point(481, 12);
+            this.labelPreviousStep.Name = "labelPreviousStep";
+            this.labelPreviousStep.Size = new System.Drawing.Size(571, 170);
+            this.labelPreviousStep.TabIndex = 10;
+            this.labelPreviousStep.Text = "labelPreviousStep";
+            this.labelPreviousStep.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // GameDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(26F, 44F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.labelPreviousStep);
             this.Controls.Add(this.labelGuildInfo);
             this.Controls.Add(this.labelStep);
             this.Controls.Add(this.numericAssassinReward);
@@ -252,6 +265,7 @@
             this.Name = "GameDisplay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameDisplay";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameDisplay_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuild)).EndInit();
             this.panelInventory.ResumeLayout(false);
@@ -282,5 +296,6 @@
         public System.Windows.Forms.Label labelGuildInfo;
         private System.Windows.Forms.PictureBox pictureBoxSilver;
         private System.Windows.Forms.Label labelSilver;
+        public System.Windows.Forms.Label labelPreviousStep;
     }
 }

@@ -69,5 +69,10 @@ namespace AnkhMorpork.Controllers
                 "you can try to outbid the contract\n" +
                 "by offering some amount of money";
         }
+
+        public override string ShowMeetingResult()
+        {
+            return $"You succesed in resigning the contract. \n You spent {Reward} AM$.";
+        }
     }
 }

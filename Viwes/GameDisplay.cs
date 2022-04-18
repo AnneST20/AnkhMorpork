@@ -15,6 +15,7 @@ namespace AnkhMorpork
         int currentGuild;
         int thiefMeetings;
         Inventory inventory;
+        string resultOfMeeting;
         GuildController guildController;
         GuildsContext guildsContext = new GuildsContext();
         string Images = Directory.GetCurrentDirectory().Replace(@"bin\Debug", @"Images\");
@@ -57,26 +58,31 @@ namespace AnkhMorpork
             labelGold.Text = ((int)inventory.Money).ToString();
             labelSilver.Text = ((int)(inventory.Money * 100 % 100)).ToString();
             labelBeer.Text = inventory.Beers.ToString();
+            labelPreviousStep.Text = resultOfMeeting;
 
             switch (currentGuild)
             {
                 case 0:
                     nextGuildPicturePath += "Assassin.jpg";
                     guildController = new AssassinsController(guildsContext, inventory);
+                    buttonMove.Text = "Resing the contract";
                     numericAssassinReward.Visible = true;
                     break;
                 case 1:
                     nextGuildPicturePath += "Beggar.jpg";
                     guildController = new BeggarsController(guildsContext, inventory);
+                    buttonMove.Text = "Give them money";
                     break;
                 case 2:
                     nextGuildPicturePath += "Fool.jpg";
                     guildController = new FoolsController(guildsContext, inventory);
+                    buttonMove.Text = "Help the fool";
                     break;
                 case 3:
                     nextGuildPicturePath += "Thief.jpg";
                     if (++thiefMeetings == 6) guildsCount--;
                     guildController = new ThievesController(guildsContext, inventory);
+                    buttonMove.Text = "Give him 10 AM$";
                     break;
                 default: break;
             }
@@ -96,6 +102,7 @@ namespace AnkhMorpork
             }
 
             bool alive = guildController.ApplyGuildRequest();
+            resultOfMeeting = guildController.ShowMeetingResult();
 
             return alive;
         }
@@ -106,6 +113,7 @@ namespace AnkhMorpork
             {
                 
                 case 2:
+                    resultOfMeeting = guildController.ShowMeetingResult();
                     return true;
                 default:
                     return false;
@@ -132,6 +140,11 @@ namespace AnkhMorpork
             this.Hide();
             EndGame end = new EndGame(death);
             end.Show();
+        }
+
+        private void GameDisplay_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
